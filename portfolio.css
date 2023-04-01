@@ -22,7 +22,7 @@ footer {
     height: var(--footerhgt);
     text-align: center;
     background-color: rgba(58, 58, 58, 0.177);
-
+    padding-top: 5px;
 }
 
 nav {
@@ -71,6 +71,8 @@ main h1 {
 
 main p {
     font-size: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 main {
     display: flex;
@@ -80,7 +82,7 @@ main {
     /* align-content: center;
     justify-content: center;
     flex-direction: column; */
-    padding-top: 70px;
+    padding-top: 0px;
     color: orange;
     font-family: Sans-serif, Arial;
     align-items: center;
@@ -92,6 +94,19 @@ main button {
     display: flex;
     font-size: 20px;
     padding: 10px 50px;
+    border-radius: 10px;
+    background-color: rgb(58, 58, 58);
+    transition: all 0.3s ease-in-out;
+    font-family: Sans-serif, Arial;
+    font-weight: bold;
+    color: orange;
+    transition: transform 0.3s;
+}
+
+.btn-darbi:hover {
+    color: gold;
+    box-shadow: 0 2px 10px gold;
+    transform: translateX(4px);
 }
 body{
     background: linear-gradient(to right, rgb(239, 239, 239), rgb(200, 200, 200) 70%);
@@ -191,6 +206,11 @@ p {
     .menu {
         display: block;
         transition: transform var(--anidur);
+    }
+
+
+    main {
+        padding-top: 45px;
     }
 
     .check:checked ~ .burger .menu {
