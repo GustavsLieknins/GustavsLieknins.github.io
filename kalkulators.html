@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Epik Kalkulator</title>
+  <link rel="Stylesheet" href="kalkulators-style.css">
+  <link rel="apple-touch-icon" sizes="128x128" href="icona-ios-home.jpeg">
+</head>
+<body>
+    <div class="container">
+        <div class="item-1" id="result"></div>
+        <div class="item-2" value="7" ><button id="button7">7</button></div>
+        <div class="item-3" value="8"  ><button id="button8">8</button></div>
+        <div class="item-4" value="9"  ><button id="button9">9</button></div>
+        <div class="item-5" value="*" onclick="myFunctionX()" ><button class="remove-zis-now" id="buttonX">x</button></div>
+        <div class="item-6" value="4" ><button id="button4">4</button></div>
+        <div class="item-7" value="5" ><button id="button5">5</button></div>
+        <div class="item-8" value="6" ><button id="button6">6</button></div>
+        <div class="item-9" value="-" onclick="myFunctionMinus()"><button class="remove-zis-now" id="buttonMinuss">-</button></div>
+        <div class="item-10" value="1" ><button id="button1">1</button></div>
+        <div class="item-11" value="2" ><button id="button2">2</button></div>
+        <div class="item-12" value="3" ><button id="button3">3</button></div>
+        <div class="item-13" value="+" onclick="myFunctionPlus()"><button class="remove-zis-now" id="buttonPlus">+</button></div>
+        <div class="item-14" value="/" onclick="myFunctionAC()"><button class="ac" id="buttonPlusMinuss">AC</button></div>
+        <div class="item-15" value="0" ><button id="button0">0</button></div>
+        <div class="item-16" value="." onclick="myFunctionDevide()"><button class="remove-zis-now" id="buttonDevide">/</button></div>
+        <div class="item-17" value="=" onclick="myFunctionDone()"><button class="done" id="buttonDone">=</button></div>
+        <div class="item-18" value="-/+" onclick="myFunctionPlusMinus()"><button class="firstNum" id="buttonPlusMinus">+/-</button></div>
+        <div class="item-19" value="." ><button class="" id="DotId" onclick="myFunctionDot()">.</button></div>
+    </div>
+
+    <script>
+
+    const resultInHtml = document.getElementById("result");
+
+
+    let zime = "";
+    let firstnumba = 0;
+    let result = NaN;
+    let YesNoMinus;
+    
+
+    let wholenumba = "";
+
+
+    let donedone = 0;
+      function myFunctionDot() {
+        wholenumba = wholenumba + ".";
+        document.getElementById("DotId").disabled = true;
+
+      }
+
+      function myFunctionMinus() {
+        if(YesNoMinus == 1){
+          firstnumba = wholenumba - wholenumba*2;
+          resultInHtml.textContent = firstnumba;
+        }else if(donedone == 1){
+          wholenumba = wholenumba;
+          resultInHtml.textContent = wholenumba;
+        }else if(donedone == 1 || YesNoMinus == 1){
+          wholenumba = wholenumba - wholenumba*2
+          resultInHtml.textContent = wholenumba;
+        }else{
+        firstnumba = wholenumba;
+        }
+        zime = "-"
+        wholenumba = "";
+        document.getElementById("DotId").disabled = false;
+
+        changeOperator("buttonMinuss");
+    }
+
+
+      function myFunctionPlus() {
+
+        if(YesNoMinus == 1){
+          firstnumba = wholenumba - wholenumba*2;
+        }else{
+          firstnumba = wholenumba;
+        }
+        zime = "+"
+        wholenumba = "";
+        resultInHtml.textContent = firstnumba;
+        // console.log(wholenumba)
+        // console.log(firstnumba)
+        console.log(document.getElementsByClassName("remove-zis-now"));
+        document.getElementById("DotId").disabled = false;
+  
+        // for (let juris of document.getElementsByClassName("remove-zis-now")) {
+        //   juris.classList.remove("hit-button");
+        // }
+
+        
+        // document.getElementById("buttonPlus").classList.add("hit-button");
+
+          changeOperator("buttonPlus");
+
+      }
+
+      function changeOperator(buttonName) {
+        for (let juris of document.getElementsByClassName("remove-zis-now")) {
+          juris.classList.remove("hit-button");
+        }
+
+        
+        document.getElementById(buttonName)?.classList.add("hit-button");
+      }
+
+      function myFunctionDevide() {
+        if(YesNoMinus == 1){
+          firstnumba = wholenumba - wholenumba*2;
+        }else{
+          firstnumba = wholenumba;
+        }
+        zime = "/"
+        wholenumba = "";
+        resultInHtml.textContent = firstnumba;
+        document.getElementById("DotId").disabled = false;
+
+        changeOperator("buttonDevide");
+      }
+
+      function myFunctionX() {
+        if(YesNoMinus == 1){
+          firstnumba = wholenumba - wholenumba*2;
+        }else{
+          firstnumba = wholenumba;
+        }
+        zime = "*"
+        wholenumba = "";
+        resultInHtml.textContent = firstnumba;
+        document.getElementById("DotId").disabled = false;
+
+        changeOperator("buttonX");
+      }
+
+      function  myFunctionPlusMinus() {
+        if(firstnumba == 0){
+        YesNoMinus = 1;
+        firstnumba = wholenumba - wholenumba*2;
+        resultInHtml.textContent = firstnumba;
+        }else if(firstnumba<0 && wholenumba>0){
+        wholenumba = wholenumba - wholenumba*2;
+        resultInHtml.textContent = wholenumba;
+        }else if(firstnumba>0 && wholenumba>0){
+        wholenumba = wholenumba - wholenumba*2;
+        resultInHtml.textContent = wholenumba;
+        }
+        
+      }
+
+      
+
+
+
+      function myFunctionDone() {
+        console.log(firstnumba)
+        console.log(wholenumba)
+        if(!isNaN(result) && wholenumba != ""){
+          firstnumba = result;
+        }
+
+        if(wholenumba == ""){
+          wholenumba = firstnumba;
+          firstnumba = result;
+        }
+
+        if(zime == "-"){
+          result = firstnumba - wholenumba;
+          resultInHtml.textContent = result;
+        }else if(zime == "+"){
+          result = parseFloat(firstnumba) + parseFloat(wholenumba);
+          resultInHtml.textContent = result;
+        }else if(zime == "/"){
+          result = firstnumba / wholenumba;
+          resultInHtml.textContent = result;
+        }else if(zime == "*"){
+          result = firstnumba * wholenumba;
+          resultInHtml.textContent = result;
+        }
+
+        firstnumba = wholenumba;
+
+        wholenumba = "";
+        YesNoMinus = "";
+        console.log(firstnumba)
+        console.log(wholenumba)
+
+        changeOperator("Da");
+
+        document.getElementById("DotId").disabled = false;
+        let donedone = 1;
+      }
+
+    
+    for(let i = 0; i<10; i++) {
+      const htmlnumba = document.getElementById("button" + i);
+      htmlnumba.addEventListener("click",()=>{
+        wholenumba = wholenumba + i;
+        console.log(wholenumba);
+        resultInHtml.textContent = wholenumba ;
+      })
+    }
+    
+    function myFunctionAC() {
+      result = NaN;
+      firstnumba = "";
+      wholenumba = "";
+      resultInHtml.textContent = "";
+      YesNoMinus = "";
+      document.getElementById("DotId").disabled = false;
+      changeOperator("Da");
+    }
+    
+    </script>
+</body>
+</html>
