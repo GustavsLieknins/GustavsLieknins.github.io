@@ -40,6 +40,7 @@ main {
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100vw;
+    box-sizing: border-box;
 }
 
 
@@ -63,6 +64,8 @@ footer {
     text-align: center;
     background-color: rgba(58, 58, 58, 0.177);
     padding-top: 5px;
+    box-sizing: border-box;
+    
 }
 
 footer p {
@@ -130,6 +133,7 @@ li:hover {
 body{
     background: linear-gradient(to right, rgb(239, 239, 239), rgb(200, 200, 200) 70%);
     margin: 0;
+    
 }
 
 .cube {
@@ -137,6 +141,7 @@ body{
     height: 300px;
     background-color: yellow;
     position: relative;
+    
 }
 
 /* .inner-cube {
