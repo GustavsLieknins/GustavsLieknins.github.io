@@ -14,7 +14,7 @@ article {
     width: 100vw;
     top: 40;
     right: 0;
-    flex-direction: row;
+    flex-direction: column;
     color: orange;
 }
 article p {
