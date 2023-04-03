@@ -21,10 +21,12 @@ article {
 article p {
     font-size: 25px;
     margin-top: 50px;
+    margin-left: 30px;
 }
 
 article h1 {
     font-size: 40px;
+    margin-left: 30px;
 }
 article img {
     position: relative;
@@ -100,6 +102,7 @@ main button {
     font-weight: bold;
     color: orange;
     transition: transform 0.3s;
+    margin-left: 30px;
 }
 
 .btn-darbi:hover {
