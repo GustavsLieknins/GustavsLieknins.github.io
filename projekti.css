@@ -44,7 +44,6 @@ main {
     box-sizing: border-box;
 }
 
-
 header {
     position: fixed;
     width: 100vw;
@@ -184,10 +183,6 @@ p {
         flex-direction: column;
     }
 }
-
-
-
-
 
 @media (max-width: 420px) {
     .burger {
