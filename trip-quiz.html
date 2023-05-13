@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="lv" data-theme="light" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik fun OMG</title>
+    <link rel="stylesheet" href="trip-quiz.css">
+    <script src="trip-quiz.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Uz kuriem galamērķiem piedāvājam ceļojumus?</h2>
+    <header>
+        <input type="checkbox" id="checkbox-header"/>
+        <img src="light-mode.svg" class="light-mode-icon"></img>
+        <img src="dark-mode.svg" class="dark-mode-icon"></img>
+    </header>
+
+    <div class="container">
+        <div id="australijaquiz">
+            <input type="checkbox" id="checkbox1" name="australija" class="checkbox-test"/>
+            <label for="checkbox-australijaquiz" id="container">Austrālija</label>         
+        </div>
+        <div id="romaquiz">
+            <input type="checkbox" id="checkbox2" name="roma" class="checkbox-test"/>
+            <label for="checkbox-romaquiz" id="container">Roma</label>        
+        </div>
+    
+        <div id="indozeijaquiz">
+            <input type="checkbox" id="checkbox3" name="indozeija" class="checkbox-test"/>
+            <label for="checkbox-indozeijaquiz" id="container">Indonēzija</label>        
+        </div>
+    
+        <div id="liepajaquiz">
+            <input type="checkbox" id="checkbox4" name="liepaja" class="checkbox-test"/>
+            <label for="checkbox-liepajaquiz" id="container">Liepāja</label>      
+            
+        </div>
+        <button class="check-answer" onclick="check()">Pārbaudīt</button>
+        <p id="check-answer"></p>
+    </div>
+</body>
+</html>

@@ -3,6 +3,11 @@
     --footerhgt: 60px;
 }
 
+.darba-piemers1 {
+    width: 400px;
+    height: 245px;
+}
+
 .teksti {
     font-family: sans-serif, Arial;
     max-width: 400px; 
