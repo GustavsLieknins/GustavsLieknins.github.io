@@ -30,6 +30,7 @@ html[data-theme="dark"]{
     height: 120px;
     width: 370px;
     z-index: 5;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .checkbox-test + label {
