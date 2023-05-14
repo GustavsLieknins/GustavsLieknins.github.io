@@ -231,6 +231,63 @@ main {
 
 @media (max-width: 420px) {
 
+    .checkbox-test {
+        opacity: 0;
+        position: absolute;
+        height: 70px;
+        width: 160px;
+        z-index: 5;
+    }
+    .checkbox-test + label {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+    }
+    
+    .checkbox-test + label::before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        outline: 2px solid black;
+        background: white;
+        left: 0;
+        top: 2px;
+    }
+    .checkbox-test:checked + label::before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        outline: 2px solid rgb(34, 255, 0);
+        background: white;
+        left: 0;
+        top: 2px;
+    }
+    
+    .checkbox-test:hover + label::before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        outline: 2px solid rgb(0, 170, 255);
+        background: white;
+        left: 0;
+        top: 2px;
+    }
+    
+    .checkbox-test:checked + label::after {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background-image: url(check-for-checkbox.svg);
+        background-size: contain;
+        left: 0;
+        top: 2px;
+    }
+
+
     .check-answer {
         height: 50px;
         width: 180px;
