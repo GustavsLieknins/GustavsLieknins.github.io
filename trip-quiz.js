@@ -26,6 +26,8 @@ if(theme == 'light' || !theme){
 }
 
 
+
+
 function check(){
     let count = 0;
     let ups = 0;
@@ -39,9 +41,7 @@ function check(){
     if(checkbox1.checked == true){
         count++;
     }
-    if(checkbox2.checked == true){
-        ups = 1;
-    }
+
     if(checkbox3.checked == true){
         count++;
     }
