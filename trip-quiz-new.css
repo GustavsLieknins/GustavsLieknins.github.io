@@ -32,7 +32,8 @@ section {
     height: 100vh;
     scroll-snap-align: start;
 }
-
+body {
+    -webkit-overflow-scrolling: touch;
 .checkbox-test {
     opacity: 0;
     position: absolute;
