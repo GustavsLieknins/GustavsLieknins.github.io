@@ -1,16 +1,4 @@
 
-let isScrolling = false;
-
-window.addEventListener('scroll', function() {
-  // Clear the timeout for previous scroll event
-  clearTimeout(isScrolling);
-  
-  // Set a timeout to handle the scroll event
-  isScrolling = setTimeout(function() {
-    // Handle scroll event here
-  }, 100); // Adjust the delay as needed
-}, false);
-
 
 
 

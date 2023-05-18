@@ -24,7 +24,6 @@ html[data-theme="dark"]{
 }
 
 html {
-    scroll-snap-type: y mandatory;
     scroll-padding-top: 80px;
 }
 
@@ -148,15 +147,6 @@ header img {
     transition: transform 0.2s;
 }
 
-.div-elements-selectables:hover {
-    transform: scale(1.07);
-}
-.div-elements-selectables:hover {
-    transform: scale(1.07);
-}
-.div-elements-selectables:hover {
-    transform: scale(1.07);
-}
 .div-elements-selectables:hover {
     transform: scale(1.07);
 }
