@@ -33,9 +33,9 @@ section {
     scroll-snap-align: start;
 }
 body {
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    }
+    touch-action: manipulation;
+    overscroll-behavior: none;
+  }
 .checkbox-test {
     opacity: 0;
     position: absolute;
