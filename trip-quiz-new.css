@@ -34,6 +34,7 @@ section {
 }
 body {
     -webkit-overflow-scrolling: touch;
+    }
 .checkbox-test {
     opacity: 0;
     position: absolute;
