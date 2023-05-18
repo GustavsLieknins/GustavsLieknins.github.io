@@ -96,8 +96,8 @@ html[data-theme="dark"]{
 .checkbox-test:checked + label::after {
     content: "";
     position: absolute;
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
     background-image: url(check.svg);
     background-size: contain;
     left: 0;
@@ -304,7 +304,7 @@ main {
         position: absolute;
         width: 18px;
         height: 18px;
-        background-image: url(check-for-checkbox.svg);
+        background-image: url(check.svg);
         background-size: contain;
         left: 0;
         top: 2px;
