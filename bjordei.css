@@ -167,9 +167,6 @@ img {
     }
 
 
-    main {
-        padding-top: 45px;
-    }
 
     .check:checked ~ .burger .menu {
         /* display: none; */
