@@ -1,8 +1,7 @@
 let countDownDate = new Date("Nov 7, 2023 00:00:00").getTime();
 
-
     let myfunc = setInterval(function() {
-
+        
         let now = new Date().getTime();
         let timeleft = countDownDate - now;
         
