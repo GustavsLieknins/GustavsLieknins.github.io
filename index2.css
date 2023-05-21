@@ -22,7 +22,7 @@ header {
 .bumbulits {
     background-repeat: no-repeat;
     position: fixed;
-    background-image: url(gift.svg);
+    background-image: url(gift2.svg);
     width: 75px;
     height: 75px;
     bottom: 50px;
@@ -68,7 +68,7 @@ nav {
 }
 a {
     
-    color: white;
+    color: var(--color4);
     text-decoration: none;
     transition: color 0.3s;
     font-size: 25px;
@@ -77,9 +77,6 @@ a {
 
 }
 
-a:hover {
-    color: gold;
-}
 
 ul {
     display: flex;
@@ -104,12 +101,12 @@ li:hover {
 
 
 main h1 {
-    color: white;
+    color: var(--color4);
     font-size: 45px;
 }
 
 main p {
-    color: white;
+    color: var(--color4);
     font-size: 30px;
     margin-right: 20px;
     margin-left: 20px;
@@ -133,7 +130,7 @@ main {
     box-sizing: border-box;
 }
 main button {
-    color: white;
+    color: var(--color4);
     margin-top: 20px;
     display: flex;
     font-size: 20px;
@@ -193,9 +190,37 @@ p {
     font-size: 20px;
     font-family: Sans-serif, Arial;
     font-weight: bold;
+    /* border-bottom: 2px solid currentColor;
+    display: inline-block;
+    line-height: 0.85; */
+}
+
+.mani-darbi {
+    margin-top: 50px;
+    border-bottom: 3px solid var(--color2);
+    display: inline-block;
+    line-height: 0.85;
+    transform: translateX(-10px);
+    transition: transform 0.3s;
+}
+
+.mani-darbi:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s;
 }
 
 @media (max-width: 420px) {
+
+    .mani-darbi{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .bumbulits {
+        width: 60px;
+        height: 60px;
+        background-image: url(gift2-mobile.svg);
+    }
 
     nav{
         height: 85%;
@@ -209,7 +234,7 @@ p {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: rgb(36, 36, 36);
+        background-color: var(--color2);
         flex-direction: column;   
         width: 100vw;
         padding-top: 20px;
