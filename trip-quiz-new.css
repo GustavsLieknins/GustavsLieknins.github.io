@@ -103,6 +103,7 @@ header img {
 
 
 .div-elements-selectables {
+    cursor: pointer;
     display: flex;
     height: 120px;
     width: 370px;
