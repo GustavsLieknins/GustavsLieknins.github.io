@@ -45,9 +45,6 @@ questions.forEach((question) => {
     const qApvalks = document.createElement("div");
     qApvalks.className = "container";
     section.appendChild(qApvalks);
-    // const qClickable = document.createElement("div");
-    // qClickable.className = "div-elements-selectables";
-    // qApvalks.appendChild(qClickable);
 
     const allAnswers = question.answers;
     allAnswers.forEach((answer) => {
@@ -66,6 +63,34 @@ questions.forEach((question) => {
     });
     
 });
+
+// questions.forEach((q) => {
+//     const form = document.createElement("section");
+//     main.appendChild(section);
+  
+//     const qText = document.createElement("h1");
+//     form.appendChild(qText);
+//     qText.textContent = q["question"];
+  
+//     const container = document.createElement("div");
+//     container.className = "container";
+//     form.appendChild(container);
+  
+//     const allAnswers = q.answers;
+//     allAnswers.forEach((answer) => {
+//       const label = document.createElement("div");
+//       qClickable.className = "div-elements-selectables";
+//       container.appendChild(label);
+//       label.textContent = answer;
+  
+//       const input = document.createElement("input");
+//       input.name = q.question;
+//       input.type = "radio";
+//       label.appendChild(input);
+//     });
+//   });
+
+
 
 // console.log(questions[0]["answers"][2]);
 

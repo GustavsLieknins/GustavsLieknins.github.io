@@ -129,6 +129,7 @@ header img {
     font-family: 'Wix Madefor Text', sans-serif;
     transition: transform 0.2s;
 }
+
 .div-elements-selectables {
     display: flex;
     height: 120px;
