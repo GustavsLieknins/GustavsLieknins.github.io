@@ -22,6 +22,7 @@
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
 }
 #teksta-logs {
     margin-top: 20px;
@@ -353,7 +354,7 @@ p {
     #con-random-shower {
         display: flex;
         background-color: var(--color3);
-        width: 200px;
+        width: 230px;
         height: 300px;
         margin-left: 30px;
         box-sizing: border-box;
