@@ -39,7 +39,9 @@ function wheelMaker(){
         const teksts = document.createElement("h1");
         teksts.id = "random-name";
         teksts.textContent = vardi[skaitlis];
-        if(numba >= looper/1.2){
+        if(numba >= looper/1.1){
+            teksts.style.animation = 'randomiser 0.5s';
+        }else if(numba >= looper/1.2){
             teksts.style.animation = 'randomiser 0.18s';
         }else if(numba >= looper/1.4){
             teksts.style.animation = 'randomiser 0.1s';
