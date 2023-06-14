@@ -1,6 +1,8 @@
 let skaitlis = 0;
 let randoms = Math.floor(Math.random() * 5) + 5;
 document.getElementById("button-for-sending-names").addEventListener("click", wheelMaker);
+document.getElementById("button-for-sending-names").addEventListener("click", titleMaker);
+
 // if(skaitlis == length){
 //     skaitlis = 0;
 //   }else{
@@ -9,6 +11,15 @@ document.getElementById("button-for-sending-names").addEventListener("click", wh
 // for(let i = 0; i<randoms; i++){
 //     wheelMaker()
 // }
+function titleMaker(){
+    const textboxvalue2 = document.getElementById("teksta-logs2").value;
+    const titleValue = document.getElementById("title-now");
+
+    var bignumba = textboxvalue2.toUpperCase();
+
+        titleValue.textContent = bignumba;
+        console.log("else 69");
+}
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }

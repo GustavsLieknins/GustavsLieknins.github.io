@@ -102,7 +102,24 @@
         display: none;
     }
 }
-
+#title-now {
+    color: var(--color4);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+.con-title {
+    display: flex;
+    padding-top: 50px;
+    width: fit-content;
+    height: 100px;
+    box-sizing: border-box;
+    margin-right: 260px;
+    margin-left: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #con-random-shower {
     background-color: var(--color3);
     width: 550px;
@@ -115,6 +132,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 150px;
+    flex: 1;
 }
 #con-random-shower h1 {
 word-wrap: break-word;
@@ -252,7 +271,6 @@ main p {
 
 main {
     display: flex;
-    flex-wrap: wrap;
     position: relative;
     justify-content: center;
     width: 100vw;
@@ -268,6 +286,7 @@ main {
     min-height: calc(100vh - var(--footerhgt));
     box-sizing: border-box;
     margin: 0;
+    flex-direction: column;
 }
 main button {
     color: var(--color4);
@@ -359,6 +378,15 @@ p {
           }
     }
     
+    .con-title {
+        margin-right: 120px;
+        margin-left: 0;
+        padding-top: 100px;
+    }
+
+    #title-now {
+        margin: 0;   
+    }
     #teksta-logs {
         margin-top: 20px;
         width: 90%;
