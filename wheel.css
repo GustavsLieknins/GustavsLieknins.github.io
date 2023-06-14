@@ -104,30 +104,28 @@
 }
 
 #con-random-shower {
-    display: flex;
     background-color: var(--color3);
     width: 550px;
     height: 350px;
     box-sizing: border-box;
     margin-right: 260px;
     margin-left: 10px;
-    margin-top: 50px;
     border-radius: 10px;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
-
-
+#con-random-shower h1 {
+word-wrap: break-word;
+}
 #random-shower {
     text-align: center;
     width: 550px;
-    height: 250px;
     margin:0;
-    align-items: center;
 }
 #random-name{
     color: var(--color4);
-    padding-top: 30px;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 70px;
     /* animation: randomiser 0.3s; */
@@ -357,7 +355,7 @@ p {
             transform: translateY(0px);
           }
           to {
-            transform: translateY(-20px);
+            transform: translateY(0px);
           }
     }
     
@@ -395,16 +393,17 @@ p {
     
     #random-shower {
         text-align: center;
-        width: 250px;
-        height: 250px;
+        width: 200px;
         margin:0;
         align-items: center;
+        overflow: visible;
     }
     #random-name{
         color: var(--color4);
-        padding-top: 60px;
         font-family: 'Bebas Neue', sans-serif;
-        font-size: 45px;
+        font-size: 40px;
+        width: 170px;
+
         /* animation: randomiser 0.3s; */
     }
     
