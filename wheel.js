@@ -12,7 +12,7 @@ document.getElementById("button-for-sending-names").addEventListener("click", wh
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
-  let looper = getRndInteger(29, 45);
+  let looper = getRndInteger(34, 58);
   let numba = 0;
   let used = 0;
 function wheelMaker(){
@@ -23,7 +23,7 @@ function wheelMaker(){
         numba = 0;
         wheelMaker();
         skaitlis = 0;
-        looper = getRndInteger(29, 50);
+        looper = getRndInteger(34, 58);
     }else{
     numba++
     console.log(looper);
