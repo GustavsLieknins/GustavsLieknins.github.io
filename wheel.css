@@ -109,7 +109,7 @@
 }
 .con-title {
     display: flex;
-    padding-top: 50px;
+    padding-top: 65px;
     width: fit-content;
     height: 100px;
     box-sizing: border-box;
@@ -374,7 +374,7 @@ p {
             transform: translateY(0px);
           }
           to {
-            transform: translateY(0px);
+            transform: translateY(-20px);
           }
     }
     
@@ -429,8 +429,8 @@ p {
     #random-name{
         color: var(--color4);
         font-family: 'Bebas Neue', sans-serif;
-        font-size: 40px;
-        width: 170px;
+        font-size: 55px;
+        width: 200px;
 
         /* animation: randomiser 0.3s; */
     }
