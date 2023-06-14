@@ -74,7 +74,7 @@ function wheelMaker(){
     }
 
     function winner(containers, teksts){
-        teksts.style.animation = 'winner 1s';
+        teksts.style.animation = 'winner 0.3s alternate infinite';
         containers.appendChild(teksts);  
     }
 
