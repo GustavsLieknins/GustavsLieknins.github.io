@@ -1,0 +1,33 @@
+[
+    {
+      "teksts": "Šo kalkulatoru veidoja 70 cilvēku komanda",
+      "image": "kalkulators.png",
+      "links": "kalkulators.html"
+    },
+    {
+        "teksts": "Apodziņu kolāža, es fotogrāfēju apodziņus jau 20 gadus.",
+        "image": "no.png",
+        "links": "kolaza.html"
+    },
+    {
+        "teksts": "Lieliska PHP kvadrātu simulācija",
+        "image": "no.png",
+        "links": "transform.html"
+    },
+    {
+        "teksts": "Darbs? idk bet sanaca smuki",
+        "image": "no.png",
+        "links": "transform.html"
+    },
+    {
+        "teksts": "Lidzigs ceturtajam bet bikit savadaks",
+        "image": "no.png",
+        "links": "transform.html"
+    },
+    {
+        "teksts": "Random selector",
+        "image": "random-selector-result.png",
+        "links": "wheel.html"
+    }
+]
+  
