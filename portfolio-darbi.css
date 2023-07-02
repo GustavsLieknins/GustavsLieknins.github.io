@@ -324,6 +324,13 @@ p {
 
 @media (max-width: 420px) {
 
+   .podzina-kartinai {
+    margin-right: 35px;
+}
+
+
+
+
     .mani-darbi{
         margin-top: 20px;
         font-size: 30px;
