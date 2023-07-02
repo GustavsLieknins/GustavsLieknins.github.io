@@ -33,3 +33,18 @@ data.forEach(q => {
     divs2.appendChild(p2);
 
 });
+
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('showmah');
+        } else {
+            entry.target.classList.remove('showmah');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.teleporters');
+hiddenElements.forEach((el) => observer.observe(el));
